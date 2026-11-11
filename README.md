@@ -2,7 +2,7 @@
 
 Client-side QR codes (via [qr-code-styling](https://github.com/kozakdenys/qr-code-styling), MIT), barcodes ([JsBarcode](https://github.com/lindell/JsBarcode), MIT), and scanning ([qr-scanner](https://github.com/nimiq/qr-scanner), MIT). By **Gentil M.** — not based on Mini QR.
 
-**Live:** https://free-qr-code-creator.gentillenoir075.workers.dev
+**Live:** https://free-qr-code-creator.web-free.site
 
 ## Develop
 

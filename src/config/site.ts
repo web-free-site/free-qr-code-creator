@@ -1,5 +1,5 @@
 export const SITE_NAME = 'Free QR Code Creator'
-export const SITE_URL = 'https://free-qr-code-creator.gentillenoir075.workers.dev'
+export const SITE_URL = 'https://free-qr-code-creator.web-free.site'
 export const AUTHOR_NAME = 'Gentil M.'
 export const AUTHOR_URL = 'https://gentil.quevvy.com'
 export const CONTACT_EMAIL = 'gentil@quevvy.com'

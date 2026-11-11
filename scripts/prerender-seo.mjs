@@ -5,7 +5,7 @@ import { createJiti } from 'jiti'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const dist = path.join(__dirname, '..', 'dist')
-const siteUrl = process.env.SITE_URL || 'https://free-qr-code-creator.gentillenoir075.workers.dev'
+const siteUrl = process.env.SITE_URL || 'https://free-qr-code-creator.web-free.site'
 const jiti = createJiti(import.meta.url)
 const { landingPages, legalPages } = jiti('../src/seo/landingPages.ts')
 const baseHtml = fs.readFileSync(path.join(dist, 'index.html'), 'utf8')
