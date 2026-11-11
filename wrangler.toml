@@ -1,0 +1,12 @@
+name = "free-qr-code-creator"
+account_id = "9b2252baefadd95947f73bc833b3234f"
+main = "worker/index.js"
+compatibility_date = "2024-11-11"
+
+workers_dev = true
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+html_handling = "auto-trailing-slash"

@@ -1,0 +1,5 @@
+Free QR Code Creator uses the following open-source components:
+
+- qr-code-styling (MIT) https://github.com/kozakdenys/qr-code-styling
+- JsBarcode (MIT) https://github.com/lindell/JsBarcode
+- qr-scanner (MIT) https://github.com/nimiq/qr-scanner

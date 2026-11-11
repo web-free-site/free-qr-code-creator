@@ -1,0 +1,10 @@
+export const SITE_NAME = 'Free QR Code Creator'
+export const SITE_URL = 'https://free-qr-code-creator.gentillenoir075.workers.dev'
+export const AUTHOR_NAME = 'Gentil M.'
+export const AUTHOR_URL = 'https://gentil.quevvy.com'
+export const CONTACT_EMAIL = 'gentil@quevvy.com'
+/** Set when the public Git repository is published. */
+export const SOURCE_REPO: string = ''
+export const ATTR_QR = 'https://github.com/kozakdenys/qr-code-styling'
+export const ATTR_BARCODE = 'https://github.com/lindell/JsBarcode'
+export const ATTR_SCANNER = 'https://github.com/nimiq/qr-scanner'
