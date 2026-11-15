@@ -84,13 +84,15 @@ write(
   })
 )
 
+const GUIDE_PATHS = ["/how-to-create-a-wifi-qr-code/", "/how-to-make-a-qr-code-for-a-website/"]
 const urls = [
   '/',
   '/fr/',
   '/source',
   '/fr/source',
   ...landingPages.flatMap((p) => [`${p.path}/`, `${p.pathFr}/`]),
-  ...legalPages.flatMap((p) => [p.path, p.pathFr])
+  ...legalPages.flatMap((p) => [p.path, p.pathFr]),
+  ...GUIDE_PATHS
 ]
 fs.writeFileSync(
   path.join(dist, 'sitemap.xml'),
