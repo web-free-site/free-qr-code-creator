@@ -136,7 +136,7 @@ watch(() => route.path, () => {
           <AdSlot slot-key="sidebar160x300" />
           <AdSlot slot-key="sidebar300x250" />
           <AdSlot slot-key="sidebar468x60" />
-        </div>
+        <h3>Time</h3><ul><li><a href="https://free-time-zone-converter.web-free.site/?ref=qr-code-creator">Free Time Zone Converter</a></li></ul><h3>Drawing</h3><ul><li><a href="https://free-whiteboard.web-free.site/?ref=qr-code-creator">Free Whiteboard</a></li></ul><h3>Random &amp; pickers</h3><ul><li><a href="https://free-spin-wheel.web-free.site/?ref=qr-code-creator">Free Spin Wheel</a></li></ul></div>
       </aside>
     </div>
     <AdSlot
