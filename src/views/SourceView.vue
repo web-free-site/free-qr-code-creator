@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import AppShell from '@/components/AppShell.vue'
 import AppFooter from '@/components/AppFooter.vue'
@@ -8,6 +8,7 @@ import {
   ATTR_QR,
   ATTR_SCANNER,
   SITE_NAME,
+  SITE_URL,
   SOURCE_REPO
 } from '@/config/site'
 
@@ -26,9 +27,28 @@ const copy = computed(() =>
       }
 )
 
-onMounted(() => {
+function applySeo() {
   document.title = `${copy.value.t} | ${SITE_NAME}`
-})
+  const canonical = `${SITE_URL}${route.path}`
+  let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null
+  if (!link) {
+    link = document.createElement('link')
+    link.rel = 'canonical'
+    document.head.appendChild(link)
+  }
+  link.href = canonical
+  let og = document.querySelector('meta[property="og:url"]') as HTMLMetaElement | null
+  if (!og) {
+    og = document.createElement('meta')
+    og.setAttribute('property', 'og:url')
+    document.head.appendChild(og)
+  }
+  og.content = canonical
+  document.documentElement.lang = fr.value ? 'fr' : 'en'
+}
+
+onMounted(applySeo)
+watch(() => route.path, applySeo)
 </script>
 
 <template>

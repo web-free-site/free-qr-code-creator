@@ -35,7 +35,15 @@ function meta() {
     c.rel = 'canonical'
     document.head.appendChild(c)
   }
-  c.href = `${SITE_URL}${route.path.endsWith('/') ? route.path : route.path + '/'}`
+  const canonical = `${SITE_URL}${route.path.endsWith('/') ? route.path : route.path + '/'}`
+  c.href = canonical
+  let og = document.querySelector('meta[property="og:url"]') as HTMLMetaElement | null
+  if (!og) {
+    og = document.createElement('meta')
+    og.setAttribute('property', 'og:url')
+    document.head.appendChild(og)
+  }
+  og.content = canonical
   document.documentElement.lang = fr.value ? 'fr' : 'en'
   locale.value = fr.value ? 'fr' : 'en'
 }
